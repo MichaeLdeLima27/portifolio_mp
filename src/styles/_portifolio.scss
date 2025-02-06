@@ -1,0 +1,96 @@
+@use 'variables' as *;
+
+.portfolio-section {
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-family: $font-primary;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: $text-color-primary;
+        font-family: $font-primary;
+    }
+
+    .portfolio-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 300px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+
+            .card-image {
+                opacity: 0;
+            }
+
+            .card-video {
+                opacity: 1;
+            }
+        }
+
+        .card-content {
+            position: relative;
+            width: 100%;
+            height: 200px;
+
+            .card-title {
+                text-align: center;
+                font-size: 1rem; // Diminui o tamanho do texto
+                color: $title-primary;
+            }
+
+            .card-image, .card-video {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            .card-video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+        }
+
+        .card-icons {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.9);
+
+            a {
+                font-size: 1.5rem;
+                color: $primary-color;
+                transition: color 0.3s ease-in-out;
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
+
+.container-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: $title-primary;
+    font-family: $font-primary;
+    padding-top: 100px;
+}

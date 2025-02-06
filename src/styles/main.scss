@@ -1,4 +1,11 @@
+@use "variables" as *;
+@use "hero";
+@use "about";
+@use "portifolio";
+
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@400;700&display=swap');
+
+
 
 * {
     margin: 0;
@@ -7,13 +14,9 @@
     text-decoration: none;
 }
 
-$font-primary: 'Kaushan Script', cursive;
-$color-primary: #333;
-$color-secondary: #64a5c5;
-$bg-color: #fff;
-$shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-$padding-x: 20px;
-$padding-y: 50px;
+
+
+
 
 .navbar {
     display: flex;
@@ -72,8 +75,8 @@ $padding-y: 50px;
 
 .theme-btn {
     img {
-        width: 28px;
-        height: 28px;
+        width: 38px;
+        height: 38px;
     }
 }
 
@@ -112,40 +115,6 @@ $padding-y: 50px;
 
     span {
         color: $color-secondary;
-    }
-}
-
-.hero {
-    height: 100vh;
-    background: url('../images/fundo_hero.png') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    position: relative;
-}
-
-.hero-content {
-    animation: fadeIn 2s ease-in-out;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
 }
 
