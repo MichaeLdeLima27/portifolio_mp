@@ -1,0 +1,45 @@
+@use 'variables' as *;
+
+.footer {
+    background-color: $bg-color; // Mesma cor do nav
+    color: $title-primary; // Mesma cor do texto do nav
+    padding: 100px;
+    text-align: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        margin: 0;
+        font-family: $font-primary;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+        display: flex;
+        gap: 20px;
+
+        li {
+            margin: 0;
+
+            a {
+                color: $title-primary; // Mesma cor do texto do nav
+                text-decoration: none;
+                font-family: $font-primary;
+
+                i {
+                    margin-right: 5px;
+                }
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
