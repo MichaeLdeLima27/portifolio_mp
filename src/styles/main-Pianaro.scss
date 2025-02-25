@@ -1,0 +1,140 @@
+@use "variables" as *;
+@use "hero";
+@use "about";
+@use "portifolio";
+@use "contatos";
+@use "footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@400;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding-y $padding-x;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    background-color: $bg-color;
+    box-shadow: $shadow;
+    font-family: $font-primary;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.logo {
+    margin-right: 0;
+    margin-left: 100px;
+    padding-left: 0;
+    padding-right: 200px;
+}
+
+.language-buttons {
+    display: flex;
+    margin-left: 0;
+}
+
+.lang-btn, .theme-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.theme-btn {
+    img {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    margin-left: auto;
+    padding-right: 200px;
+
+    li {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.theme-button {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: $color-primary;
+
+    &:hover {
+        color: $color-secondary;
+    }
+}
+
+.navbar .logo {
+    color: $color-primary;
+
+    span {
+        color: $color-secondary;
+    }
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme .navbar {
+    background-color: #444;
+}
+
+body.dark-theme .navbar a {
+    color: #fff;
+}
+
+body.dark-theme .navbar a:hover {
+    color: #64a5c5;
+}

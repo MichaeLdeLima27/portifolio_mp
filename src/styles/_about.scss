@@ -3,6 +3,7 @@
 body {
     background: url('/path/to/your/background-image.jpg') no-repeat center center fixed;
     background-size: cover;
+    background-color: $bg-color;
 }
 
 .scroll-to-top, .whatsapp-link {
@@ -48,8 +49,8 @@ body {
 
 
 #sobre, #skills {
-    padding: 4rem 0;
-    background-color: rgba(255, 255, 255, 0.8); // Fundo semi-transparente para destacar o conteúdo
+    padding-bottom: 10px;
+    background-color: $bg-color; // Fundo semi-transparente para destacar o conteúdo
     font-family: $font-primary;
 
     .container-title {
@@ -133,6 +134,7 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 1rem;
         justify-items: center;
+        padding-bottom: 50px;
 
         .skill-card {
             width: 120px;

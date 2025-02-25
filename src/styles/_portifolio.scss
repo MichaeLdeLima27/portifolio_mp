@@ -2,7 +2,7 @@
 
 .portfolio-section {
     margin-bottom: 30px;
-    padding-top: 10px;
+    padding-top: 50px;
     font-family: $font-primary;
 
     h2 {
@@ -11,6 +11,7 @@
         text-align: center;
         color: $text-color-primary;
         font-family: $font-primary;
+        padding-bottom: 30px;
     }
 
     .portfolio-cards {
@@ -25,62 +26,81 @@
         position: relative;
         overflow: hidden;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 15px rgb(16, 30, 93);
         transition: transform 0.3s ease-in-out;
 
         &:hover {
-            transform: scale(1.05);
-
-            .card-image {
-                opacity: 0;
-            }
-
-            .card-video {
-                opacity: 1;
-            }
+            transform: scale(1.3); // Expande o card inteiro
+            z-index: 20;
         }
 
         .card-content {
             position: relative;
             width: 100%;
             height: 200px;
+            
 
             .card-title {
                 text-align: center;
-                font-size: 1rem; // Diminui o tamanho do texto
+                font-size: 16px; // Diminui o tamanho do texto
                 color: $title-primary;
+                padding-top: 10px;
             }
 
-            .card-image, .card-video {
+            .card-image {
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: contain; // Ajusta a imagem para cobrir o container sem distorcer
                 object-position: center;
-                transition: opacity 0.3s ease-in-out;
-            }
-
-            .card-video {
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
+                transition: transform 0.3s ease-in-out;
             }
         }
 
-        .card-icons {
+        .card-icons, .like-button {
             display: flex;
-            justify-content: space-around;
-            padding: 10px 0;
-            background-color: rgba(255, 255, 255, 0.9);
+            align-items: center;
+            background-color: $bg-color; // Remove a transparência
+            position: relative;
+            margin: 13px;
+        }
+
+        .card-icons {
+            justify-content: flex-start; // Alinha os ícones à esquerda
+            z-index: -1;
 
             a {
-                font-size: 1.5rem;
+                font-size: 20px;
                 color: $primary-color;
+                margin-right: 20px; // Espaçamento entre os ícones
                 transition: color 0.3s ease-in-out;
 
                 &:hover {
                     color: $accent-color;
                 }
+            }
+        }
+
+        .like-button {
+            justify-content: flex-end; // Alinha o botão de curtidas à direita
+            margin-left: auto;
+
+            button {
+                font-size: 1.5rem;
+                color: $primary-color;
+                background: none;
+                border: none;
+                cursor: pointer;
+                transition: color 0.3s ease-in-out;
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+
+            .like-count {
+                margin-left: 10px;
+                font-size: 1.2rem;
+                color: $text-color-primary;
             }
         }
     }

@@ -1,0 +1,37 @@
+{
+    "title": "Portfolio - Michael de Lima",
+    "nav": {
+      "inicio": "Home",
+      "sobre": "About",
+      "habilidades": "Skills",
+      "portifolio": "Portfolio",
+      "contato": "Contact"
+    },
+    "hero": {
+      "welcome": "Hello, my name is <span class='highlight'>Michael de Lima Rocha</span>",
+      "name": "Michael de Lima Rocha",
+      "portfolio": "Welcome to my Portfolio"
+    },
+    "sobre": {
+      "title": "About",
+      "subtitle": "A little about me",
+      "description": "My professional journey began in another field, where I worked as a production manager, but my passion and dedication to studies led me to a career transition to the development area. Today, my mission is to transform ideas into efficient solutions, creating scalable and impactful applications. My experience includes JavaScript, Python, ReactJS, React Native, SCSS, LESS, Bootstrap, Git, GitHub, HTML, and CSS, in addition to strong knowledge in code organization and optimization. I constantly seek to improve my skills and explore new technologies to always deliver the best result. Besides Coding When I'm not developing, I enjoy camping with my family, playing video games with my son, and watching series and movies. I'm a fan of suspense and comedy, and my favorite series is The Office, while my favorite movie is Shutter Island. I'm also a passionate supporter of Santos FC and greatly value outdoor moments. I'm always open to new opportunities, challenges, and connections. Let's chat? 🚀"
+    },
+    "habilidades": {
+      "title": "Skills & Competencies"
+    },
+    "portifolio": {
+      "title": "My Projects",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "mobile": "Mobile"
+    },
+    "contato": {
+      "title": "Contact",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "description": "If you have questions, suggestions, or would like to discuss job opportunities or collaboration, feel free to contact me."
+    }
+  }

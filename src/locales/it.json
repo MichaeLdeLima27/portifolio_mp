@@ -1,0 +1,37 @@
+{
+    "title": "Portfolio - Michael de Lima",
+    "nav": {
+      "inicio": "Inizio",
+      "sobre": "Chi sono",
+      "habilidades": "Competenze",
+      "portifolio": "Portfolio",
+      "contato": "Contatto"
+    },
+    "hero": {
+      "welcome": "Ciao, mi chiamo <span class='highlight'>Michael de Lima Rocha</span>",
+      "name": "Michael de Lima Rocha",
+      "portfolio": "Benvenuto nel mio Portfolio"
+    },
+    "sobre": {
+      "title": "Chi sono",
+      "subtitle": "Un po' su di me",
+      "description": "Il mio percorso professionale è iniziato in un altro campo, dove ho lavorato come responsabile di produzione, ma la mia passione e dedizione agli studi mi hanno portato a una transizione di carriera nell'area dello sviluppo. Oggi, la mia missione è trasformare le idee in soluzioni efficienti, creando applicazioni scalabili e di impatto. La mia esperienza include JavaScript, Python, ReactJS, React Native, SCSS, LESS, Bootstrap, Git, GitHub, HTML e CSS, oltre a una solida conoscenza nell'organizzazione e ottimizzazione del codice. Cerco costantemente di migliorare le mie competenze ed esplorare nuove tecnologie per offrire sempre il miglior risultato. Oltre al Codice Quando non sto sviluppando, mi piace fare campeggio con la mia famiglia, giocare ai videogiochi con mio figlio e guardare serie e film. Sono un fan del suspense e della commedia, e la mia serie preferita è The Office, mentre il mio film preferito è Shutter Island. Sono anche un appassionato sostenitore del Santos FC e apprezzo molto i momenti all'aria aperta. Sono sempre aperto a nuove opportunità, sfide e connessioni. Parliamone? 🚀"
+    },
+    "habilidades": {
+        "title": "Competenze & Abilità"
+    },
+    "portifolio": {
+        "title": "I miei progetti",
+        "frontend": "Front-end",
+        "backend": "Back-end",
+        "mobile": "Mobile"
+    },
+    "contato": {
+        "title": "Contatto",
+        "name": "Nome",
+        "email": "Email",
+        "message": "Messaggio",
+        "send": "Invia",
+        "description": "Se hai domande, suggerimenti o desideri discutere opportunità di lavoro o collaborazioni, non esitare a contattarmi."
+    }
+}

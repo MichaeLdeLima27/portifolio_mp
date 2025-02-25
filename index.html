@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Michael de Lima</title>
+    <title data-translate="title">Portfólio - Michael de Lima</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./dist/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -13,39 +13,46 @@
         <div class="container">
             <div class="row">
                 <div class="language-buttons">
-                    <button class="lang-btn"><img src="./src/images/italia.png" alt="Italiano"></button>
-                    <button class="lang-btn"><img src="./src/images/estados-unidos.png" alt="Inglês"></button>
+                    <button class="lang-btn"><img id="btn-it" src="./src/images/italia.png" alt="Italiano"></button>
+                    <button class="lang-btn"><img id="btn-en" src="./src/images/estados-unidos.png" alt="Inglês"></button>
                     <button class="theme-btn"><img src="./src/images/dia-e-noite.png" alt="Tema"></button>
                 </div>
                 <div class="logo"><a href="index.html">Desenvolvedor<span>Fullstack</span></a></div>
                 <ul class="menu">
-                    <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                    <li class="nav-item"><a href="#portifolio" class="nav-link">Portifolio</a></li>
-                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                    <li id="nav-inicio" class="nav-item"><a href="#inicio" class="nav-link active" data-translate="nav.inicio">Inicio</a></li>
+                    <li id="nav-sobre" class="nav-item"><a href="#sobre" class="nav-link" data-translate="nav.sobre">Sobre</a></li>
+                    <li id="nav-habilidades" class="nav-item"><a href="#habilidades" class="nav-link" data-translate="nav.habilidades">Habilidades</a></li>
+                    <li id="nav-portifolio" class="nav-item"><a href="#portifolio" class="nav-link" data-translate="nav.portifolio">Portifolio</a></li>
+                    <li id="nav-contato" class="nav-item"><a href="#contato" class="nav-link" data-translate="nav.contato">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- seção hero -->
+
+    <!-- Seção Hero -->
     <section id="inicio" class="hero">
+        <video id="myVideo" controls autoplay muted loop>
+            <source src="./dist/images/hero1.mp4" type="video/mp4">
+        </video>
         <div class="hero-content">
-            <p>Olá meu nome é <span class="highlight">Michael de Lima Rocha</span></p>
-            <h1>Bem vindo ao meu Portifolio</h1>
+            <p data-translate="hero.welcome">
+                Olá, meu nome é <span class="highlight" data-translate="hero.name">Michael de Lima Rocha</span>
+            </p>
+            <h1 data-translate="hero.portfolio">Bem vindo ao meu Portifolio</h1>
             <a href="#sobre" class="scroll-down">
                 <i class="fas fa-chevron-down"></i>
             </a>
         </div>
     </section>
-    <!-- seção sobre -->
+
+    <!-- Seção Sobre -->
     <section id="sobre" class="container mt-5 custom">
-        <h1 class="container-title">Sobre</h1>
-        <span class="subtitle">Um pouco sobre mim</span>
+        <h1 class="container-title" data-translate="sobre.title">Sobre</h1>
+        <span class="subtitle" data-translate="sobre.subtitle">Um pouco sobre mim</span>
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
-                <img src="./dist/images/imagem_perfil1.png" alt="Foto de Perfil" class="img-fluid profile-photo">
-                <h3 class="name">Michael de Lima Rocha</h3>
+                <img src="./dist/images/foto_perfil_2.jpg" alt="Foto de Perfil" class="img-fluid profile-photo">
+                <h3 class="name" data-translate="hero.name">Michael de Lima Rocha</h3>
                 <div class="social-icons">
                     <a href="https://github.com/MichaeLdeLima27" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/michelap19/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -54,16 +61,14 @@
                 </div>
             </div>
             <div class="col-md-8 text-content">
-                <p> Sou um <span class="highlight">Desenvolvedor Fullstack</span> apaixonado por tecnologia, inovação<span class="highlight"> e desenvolvimento</span>.</p><br>
-                <p> Minha jornada profissional começou em outra área, onde trabalhei como gerente de produção, mas minha paixão e dedicação aos estudos me levaram a uma transição de carreira para a área de desenvolvimento. Hoje, minha missão é transformar ideias em soluções eficientes, criando aplicações escaláveis e impactantes.<br> <span class="highlight"> Minha experiência inclui</span> JavaScript, Python, ReactJS, React Native, SCSS, LESS, Bootstrap, Git, GitHub, HTML e CSS,
-                além de um forte conhecimento em organização e otimização de código. Busco constantemente aprimorar minhas habilidades e explorar novas tecnologias para entregar sempre o melhor resultado.<br><br><span class="highlight"> Além do Código</span> Quando não estou desenvolvendo, gosto de acampar com minha família, jogar videogame com meu filho e assistir a séries e filmes. Sou fã de suspense e comédia, e minha série favorita é The Office, enquanto meu filme preferido é Ilha do Medo. Também sou um torcedor apaixonado pelo Santos FC e valorizo muito os momentos ao ar livre.<br><br>
-                Estou sempre aberto a novas oportunidades, desafios e conexões. Vamos trocar uma ideia? 🚀</p>
+                <p data-translate="sobre.description">Minha jornada profissional começou em outra área, onde trabalhei como gerente de produção, mas minha paixão e dedicação aos estudos me levaram a uma transição de carreira para a área de desenvolvimento. Hoje, minha missão é transformar ideias em soluções eficientes, criando aplicações escaláveis e impactantes. Minha experiência inclui JavaScript, Python, ReactJS, React Native, SCSS, LESS, Bootstrap, Git, GitHub, HTML e CSS, além de um forte conhecimento em organização e otimização de código. Busco constantemente aprimorar minhas habilidades e explorar novas tecnologias para entregar sempre o melhor resultado. Além do Código Quando não estou desenvolvendo, gosto de acampar com minha família, jogar videogame com meu filho e assistir a séries e filmes. Sou fã de suspense e comédia, e minha série favorita é The Office, enquanto meu filme preferido é Ilha do Medo. Também sou um torcedor apaixonado pelo Santos FC e valorizo muito os momentos ao ar livre. Estou sempre aberto a novas oportunidades, desafios e conexões. Vamos trocar uma ideia? 🚀</p>
             </div>
         </div>
     </section>
-    <!-- seção habilidades -->
+
+    <!-- Seção Habilidades -->
     <section id="habilidades" class="container mt-5 custom">
-        <h1 class="container-title">Competências & Habilidades</h1>
+        <h1 class="container-title" data-translate="habilidades.title">Competências & Habilidades</h1>
         <div class="skills-grid">
             <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" class="skill-card"><i class="fab fa-html5"></i><p>HTML5</p></a>
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill-card"><i class="fab fa-css3"></i><p>CSS3</p></a>
@@ -83,134 +88,213 @@
             <a href="https://www.postgresql.org/docs/" target="_blank" class="skill-card"><i class="fas fa-database"></i><p>SQL</p></a>
         </div>
     </section>
-    <!-- seção meu portifolio  -->
+
+    <!-- Seção Portfólio -->
     <section id="portifolio" class="container mt-5 custom">
-        <h1 class="container-title">Meus Projetos </h1>
+        <h1 class="container-title" data-translate="portifolio.title">Meus Projetos</h1>
         <div class="portfolio-section">
-            <h2>Front-end</h2>
+            <h2 data-translate="portifolio.frontend">Front-end</h2>
             <div class="portfolio-cards">
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
-                        <img src="./dist/images/clone_site_disney.png" alt="Projeto Front-end 1" class="card-image">
-                        <video src="path/to/your/video1.mp4" class="card-video"></video>
+                        <h3 class="card-title" data-translate="portifolio.clone-disney-plus">Clone Disney Plus</h3>
+                        <img src="./dist/images/foto_clone_disney.png" alt="Projeto Front-end 1" class="card-image">
                     </div>
                     <div class="card-icons">
                         <a href="https://clone-disneyplus-sigma-lemon.vercel.app/" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/MichaeLdeLima27/clone_disneyplus" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="like-button">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                            <span class="like-count">0</span>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
+                        <h3 class="card-title" data-translate="portifolio.projeto-frontend-2">Projeto Front-end 2</h3>
                         <img src="path/to/your/image2.jpg" alt="Projeto Front-end 2" class="card-image">
-                        <video src="path/to/your/video2.mp4" class="card-video"></video>
                     </div>
                     <div class="card-icons">
                         <a href="https://link-to-project2.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo2" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="like-button">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                            <span class="like-count">0</span>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
+                        <h3 class="card-title" data-translate="portifolio.projeto-frontend-3">Projeto Front-end 3</h3>
                         <img src="path/to/your/image3.jpg" alt="Projeto Front-end 3" class="card-image">
-                        <video src="path/to/your/video3.mp4" class="card-video"></video>
                     </div>
                     <div class="card-icons">
                         <a href="https://link-to-project3.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo3" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="like-button">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                            <span class="like-count">0</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="portfolio-section">
-            <h2>Back-end</h2>
+            <h2 data-translate="portifolio.backend">Back-end</h2>
             <div class="portfolio-cards">
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
-                        <img src="path/to/your/image1.jpg" alt="Projeto Front-end 1" class="card-image">
-                        <video src="path/to/your/video1.mp4" class="card-video"></video>
+                        <h3 class="card-title" data-translate="portifolio.projeto-backend-1">Projeto Back-end 1</h3>
+                        <img src="path/to/your/image1.jpg" alt="Projeto Back-end 1" class="card-image">
                     </div>
                     <div class="card-icons">
                         <a href="https://link-to-project1.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo1" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="like-button">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                            <span class="like-count">0</span>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
-                        <img src="path/to/your/image2.jpg" alt="Projeto Front-end 2" class="card-image">
-                        <video src="path/to/your/video2.mp4" class="card-video"></video>
+                        <h3 class="card-title" data-translate="portifolio.projeto-backend-2">Projeto Back-end 2</h3>
+                        <img src="path/to/your/image2.jpg" alt="Projeto Back-end 2" class="card-image">
                     </div>
                     <div class="card-icons">
                         <a href="https://link-to-project2.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo2" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="like-button">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                            <span class="like-count">0</span>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
-                        <img src="path/to/your/image3.jpg" alt="Projeto Front-end 3" class="card-image">
-                        <video src="path/to/your/video3.mp4" class="card-video"></video>
+                        <h3 class="card-title" data-translate="portifolio.projeto-backend-3">Projeto Back-end 3</h3>
+                        <img src="path/to/your/image3.jpg" alt="Projeto Back-end 3" class="card-image">
                     </div>
                     <div class="card-icons">
                         <a href="https://link-to-project3.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo3" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="like-button">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                            <span class="like-count">0</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="portfolio-section">
-            <h2>Mobile</h2>
+            <h2 data-translate="portifolio.mobile">Mobile</h2>
             <div class="portfolio-cards">
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
-                        <img src="path/to/your/image1.jpg" alt="Projeto Front-end 1" class="card-image">
-                        <video src="path/to/your/video1.mp4" class="card-video"></video>
+                        <h3 class="card-title" data-translate="portifolio.projeto-mobile-1">Projeto Mobile 1</h3>
+                        <img src="path/to/your/image1.jpg" alt="Projeto Mobile 1" class="card-image">
                     </div>
                     <div class="card-icons">
                         <a href="https://link-to-project1.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo1" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="like-button">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                            <span class="like-count">0</span>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
-                        <img src="path/to/your/image2.jpg" alt="Projeto Front-end 2" class="card-image">
-                        <video src="path/to/your/video2.mp4" class="card-video"></video>
+                        <h3 class="card-title" data-translate="portifolio.projeto-mobile-2">Projeto Mobile 2</h3>
+                        <img src="path/to/your/image2.jpg" alt="Projeto Mobile 2" class="card-image">
                     </div>
                     <div class="card-icons">
                         <a href="https://link-to-project2.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo2" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="like-button">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                            <span class="like-count">0</span>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
-                        <img src="path/to/your/image3.jpg" alt="Projeto Front-end 3" class="card-image">
-                        <video src="path/to/your/video3.mp4" class="card-video"></video>
+                        <h3 class="card-title" data-translate="portifolio.projeto-mobile-3">Projeto Mobile 3</h3>
+                        <img src="path/to/your/image3.jpg" alt="Projeto Mobile 3" class="card-image">
                     </div>
                     <div class="card-icons">
                         <a href="https://link-to-project3.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo3" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="like-button">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                            <span class="like-count">0</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- seção contatos   -->
+    <section id="contato" class="container mt-5 custom">
+        <h1 class="container-title" data-translate="contato.title">Contato</h1>
+        <div class="contact-section">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                    <div class="form-group">
+                        <label for="name" data-translate="contato.name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate="contato.email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="contato.message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" data-translate="contato.send">Enviar</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <img src="./dist/images/foto_perfil_2.jpg" alt="Minha Foto" class="contact-photo">
+                <a href="path/to/your/curriculo.pdf" class="btn" download>Download Currículo</a>
+                <ul class="contact-links">
+                    <li><a href="https://www.linkedin.com/in/michelap19" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/michaelDeLima</a></li>
+                    <li><a href="https://github.com/MichaeLdeLima27" target="_blank"><i class="fab fa-github"></i> github.com/michaelDeLima</a></li>
+                    <li><a href="mailto:teconhecer27@gmail"><i class="fas fa-envelope"></i> teconhecer27@gmail.com</a></li>
+                </ul>
+                <p data-translate="contato.description">Se você tem perguntas, sugestões ou gostaria de discutir oportunidades de trabalho ou colaboração, sinta-se à vontade para entrar em contato comigo.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Botão para voltar ao topo -->
-    <a href="#top" class="scroll-to-top">
+    <a href="#top" class="scroll-to-top" data-id="voltar-topo">
         <i class="fas fa-chevron-up"></i>
     </a>
+
     <!-- Botão para WhatsApp -->
-    <a href="https://wa.me/41987604043" class="whatsapp-link" target="_blank">
+    <a href="https://wa.me/41987604043" class="whatsapp-link" target="_blank" data-id="whatsapp">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./dist/scripts/main.js"></script>
-</body>
-</html>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Michael de Lima Rocha. Todos os direitos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/michelap19" target="_blank" data-id="linkedin-footer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/MichaeLdeLima27" target="_blank" data-id="github-footer"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="mailto:teconhecer27@gmail.com" target="_blank" data-id="email-footer"><i class="fas fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="./dist/scripts/main.js"></script>
+    </body>
+    </html>
+    
