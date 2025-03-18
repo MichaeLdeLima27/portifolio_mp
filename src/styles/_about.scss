@@ -59,8 +59,9 @@ body {
         color: $title-primary;
         font-weight: bold;
         justify-content: space-between;
-        margin-right: 400px;
+        margin-left: 0;
         margin-top: 100px;
+        margin-right: 500px;
     }
 
     .subtitle {
@@ -69,7 +70,8 @@ body {
         font-size: 1.2rem;
         color: $text-color-secondary;
         margin-bottom: 2rem;
-        margin-right: 400px;
+        margin-left: 0;
+        margin-right: 500px;
     }
 
     .row {

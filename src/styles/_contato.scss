@@ -1,0 +1,207 @@
+
+/* Layout do Contato */
+.contact-section {
+    max-width: 1200px;
+    margin-left: 50px;
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #e4edeef6; /* Cor de fundo */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Título */
+.container-title {
+    margin-left: 600px;
+    font-size: 48px;
+    font-family: 'Kaushan Script', cursive; /* Fonte do título */
+    font-weight: bold;
+    color: #244484; /* Cor do título */
+    margin-bottom: 18px;
+    z-index: 2;
+}
+
+/* Subtítulo */
+.subtitle {
+    margin-left: 560px;
+    font-size: 28px;
+    color: #959da2; /* Cor do subtítulo */
+    margin-bottom: 82px;
+    font-family: 'Kaushan Script', cursive;
+    z-index: 2;
+}
+
+/* Layout do conteúdo do contato (formulário e informações) */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 1;
+    margin-top: 8px;
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos do Formulário */
+.contact-form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 16px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #333;
+    position: relative;
+    z-index: 1;
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; /* Espaçamento ajustado */
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 14px;
+        color: #10253b; /* Cor do texto */
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    input, textarea {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #333;
+        border-radius: 6px;
+        margin-bottom: 8px;
+        width: 100%;
+        background-color: #fff;
+        color: #10253b;
+        transition: border-color 0.3s ease;
+        
+
+        &:focus {
+            border-color: #4c6893; /* Cor do foco */
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #a6c4de; /* Cor do placeholder */
+        }
+    }
+
+    button {
+        padding: 12px 18px;
+        background-color: #4c6893; /* Cor do botão */
+        color: white;
+        font-family: 'Kaushan Script', cursive;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s, transform 0.3s;
+        width: 100%;
+        z-index: 2;
+
+        &:hover {
+            background-color: #395a7a; /* Cor do hover */
+            transform: translateY(-2px);
+        }
+    }
+}
+
+/* Estilos para Foto de Contato */
+.contact-info-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+
+    .contato-photo-container {
+        margin-bottom: 16px;
+
+        .contact-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 4px solid white;
+        }
+    }
+
+    .contact-address {
+        h3 {
+            font-size: 20px;
+            color: #4c6893; /* Cor do título */
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #10253b; /* Cor do texto */
+            margin-bottom: 32px;
+        }
+
+        .map-container iframe {
+            margin-right: 200px;
+            width: 500px;
+            height: 200px;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: #6c757d; /* Cor de fundo do rodapé */
+    padding: 32px 0;
+    color: #a6c4de; /* Cor do texto no rodapé */
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .footer-left p {
+            font-size: 14px;
+            color: #a6c4de;
+        }
+
+        .footer-right {
+            .social-icons {
+                display: flex;
+                gap: 16px;
+
+                a {
+                    color: #a6c4de;
+                    font-size: 18px;
+
+                    &:hover {
+                        color: #4c6893; /* Cor do hover */
+                    }
+                }
+            }
+        }
+    }
+}

@@ -47,7 +47,7 @@
 
     <!-- Seção Sobre -->
     <section id="sobre" class="container mt-5 custom">
-        <h1 class="container-title" data-translate="sobre.title">Sobre</h1>
+        <h1 class="container-title"  data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true" data-translate="sobre.title">Sobre</h1>
         <span class="subtitle" data-translate="sobre.subtitle">Um pouco sobre mim</span>
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
@@ -68,7 +68,7 @@
 
     <!-- Seção Habilidades -->
     <section id="habilidades" class="container mt-5 custom">
-        <h1 class="container-title" data-translate="habilidades.title">Competências & Habilidades</h1>
+        <h1 class="container-title"  data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true" data-translate="habilidades.title">Competências & Habilidades</h1>
         <div class="skills-grid">
             <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" class="skill-card"><i class="fab fa-html5"></i><p>HTML5</p></a>
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill-card"><i class="fab fa-css3"></i><p>CSS3</p></a>
@@ -91,7 +91,7 @@
 
     <!-- Seção Portfólio -->
     <section id="portifolio" class="container mt-5 custom">
-        <h1 class="container-title">Meus Projetos </h1>
+        <h1 class="container-title"  data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true" data-translate="portifolio.title">Meus Projetos </h1>
         <div class="portfolio-section">
             <h2 data-translate="portifolio.frontend">Front-end</h2>
             <div class="portfolio-cards">
@@ -235,6 +235,61 @@
             </div>
         </div>
     </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact-section">
+        <h1 class="container-title"  data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true" data-translate="contato.title">Contato</h1>
+        <span class="subtitle" data-translate="contato.subtitle">Fique à vontade para entrar em contato</span>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <form action="YOUR_SERVER_ENDPOINT" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-translate="contato.name">Nome</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate="contato.email">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="contato.message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-translate="contato.submit">Enviar</button>
+                </form>
+            </div>
+            <div class="contact-info-container">
+                <div class="contato-photo-container">
+                    <img src="./dist/images/imagem_perfil1.png" alt="Minha Foto" class="contact-photo">
+                </div>
+                <div class="contact-address">
+                    <h3 data-translate="contato.address">Meu Endereço</h3>
+                    <p data-translate="contato.address-text">Rua Exemplo, 123, Cidade, Estado</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p data-translate="footer.copyright">&copy; 2025 Michael de Lima Rocha | Desenvolvedor Fullstack</p>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="https://github.com/MichaeLdeLima27" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/michelap19/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/michelap19?igsh=MWcxbW1nY3M3ejRsaw==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:teconhecer27@gmail.com" target="_blank" title="E-mail"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
     
     <!-- Botão para voltar ao topo -->
     <a href="#top" class="scroll-to-top" data-id="voltar-topo">
