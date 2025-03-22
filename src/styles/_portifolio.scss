@@ -16,6 +16,11 @@
         font-family: $font-primary;
         padding-bottom: 30px;
         margin-right: 500px;
+
+        @media (max-width: 768px) {
+            margin-right: 0;
+            text-align: center;
+        }
     }
 
     .portfolio-cards {
@@ -56,7 +61,7 @@
             .card-image {
                 width: 100%;
                 height: 100%;
-                object-fit: contain; // Ajusta a imagem para cobrir o container sem distorcer
+                object-fit: cover; // Ajusta a imagem para cobrir o container sem distorcer
                 object-position: center;
                 transition: transform 0.3s ease-in-out;
             }
@@ -65,20 +70,22 @@
         .card-icons, .like-button {
             display: flex;
             align-items: center;
-            background-color: $bg-color; // Remove a transparência
+            background-color: transparent; 
             position: relative;
             margin: 13px;
         }
 
         .card-icons {
-            justify-content: flex-start; // Alinha os ícones à esquerda
-            z-index: -1;
+            justify-content: space-between; // Alinha os ícones à esquerda
+            z-index: 1;
 
             a {
                 font-size: 20px;
                 color: $primary-color;
-                margin-right: 20px; // Espaçamento entre os ícones
                 transition: color 0.3s ease-in-out;
+                margin-top: 30px;
+                margin-left: 50px;
+                margin-right: 50px;
 
                 &:hover {
                     color: $accent-color;
@@ -120,4 +127,68 @@
     font-family: $font-primary;
     padding-top: 100px;
     margin-right: 100px;
+
+    @media (max-width: 768px) {
+        margin-right: 70px;
+        text-align: center;
+    }
+}
+
+// Estilos para o tema escuro
+body.dark {
+    .portfolio-section {
+        background-color: #2f4664; // Fundo escuro para a seção de portfólio
+        color: #fff; // Texto branco
+
+        h2 {
+            color: #fff; // Texto branco
+        }
+
+        .card {
+            background-color: transparent; // Fundo escuro para os cards
+            color: #fff; // Texto branco
+
+            .card-content {
+                .card-title {
+                    color: #fff; // Texto branco
+                }
+
+                .card-image {
+                    border-color: #fff;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; // Ajusta a imagem para cobrir o container sem distorcer
+                    object-position: center;
+                    transition: transform 0.3s ease-in-out;
+                }
+            }
+
+            .card-icons {
+                display: none;
+                align-items: center;
+                background-color: transparent; 
+                position: relative;
+                margin: 13px;
+
+                a {
+                    font-size: 20px;
+                    background-color: transparent;
+                    color: $primary-color;
+                    margin-right: 20px; // Espaçamento entre os ícones
+                    transition: color 0.3s ease-in-out;
+                    margin-top: 30px;
+                    margin-left: 50px;
+                    margin-right: 50px;
+
+                    &:hover {
+                        color: #4c6893; // Cor do hover
+                    }
+                }
+            }
+        }
+    }
+
+    .container-title {
+        color: #fff; // Texto branco
+    }
 }

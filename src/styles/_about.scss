@@ -47,7 +47,6 @@ body {
     }
 }
 
-
 #sobre, #skills {
     padding-bottom: 10px;
     background-color: $bg-color; // Fundo semi-transparente para destacar o conteúdo
@@ -62,6 +61,11 @@ body {
         margin-left: 0;
         margin-top: 100px;
         margin-right: 500px;
+
+        @media (max-width: 768px) {
+            margin-right: 0;
+            font-size: 2rem;
+        }
     }
 
     .subtitle {
@@ -72,6 +76,11 @@ body {
         margin-bottom: 2rem;
         margin-left: 0;
         margin-right: 500px;
+
+        @media (max-width: 768px) {
+            margin-right: 0;
+            font-size: 1rem;
+        }
     }
 
     .row {
@@ -81,6 +90,10 @@ body {
         justify-content: space-between;
         flex-wrap: nowrap;
 
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .profile-photo {
@@ -92,6 +105,11 @@ body {
         margin-bottom: 24px;
         padding: 10px;
         border: 2px solid $title-primary;
+
+        @media (max-width: 768px) {
+            width: 200px;
+            height: 200px;
+        }
     }
 
     .social-icons {
@@ -109,6 +127,10 @@ body {
                 transform: scale(1.1);
                 color: $accent-color;
             }
+
+            @media (max-width: 768px) {
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -117,6 +139,11 @@ body {
         text-align: center;
         margin-right: 200px;
         font-family: $font-primary;
+
+        @media (max-width: 768px) {
+            margin-right: 0;
+        }
+
         p {
             font-size: 1.1rem;
             color: $text-color-primary;
@@ -125,6 +152,10 @@ body {
             span {
                 color: $primary-color;
                 font-weight: bold;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 1rem;
             }
         }
     }
@@ -135,6 +166,10 @@ body {
     font-weight: bold;
     font-family: $font-primary;
     font-size: 30px;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 #habilidades {
@@ -144,6 +179,10 @@ body {
         gap: 1rem;
         justify-items: center;
         padding-bottom: 50px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
 
         .skill-card {
             width: 120px;
@@ -167,11 +206,19 @@ body {
             i, img {
                 font-size: 2.5rem;
                 margin-bottom: 0.5rem;
+
+                @media (max-width: 768px) {
+                    font-size: 2rem;
+                }
             }
 
             p {
                 font-size: 1rem;
                 font-weight: bold;
+
+                @media (max-width: 768px) {
+                    font-size: 0.9rem;
+                }
             }
         }
     }
@@ -184,6 +231,26 @@ body {
         padding-top: 150px;
         font-family: $font-primary;
         color: $title-primary;
+
+        @media (max-width: 768px) {
+            font-size: 2.5rem;
+            margin-left: 0;
+            padding-top: 100px;
+        }
     }
 }
 
+body.dark {
+    #sobre, #skills {
+        background-color: #2f4664; // Fundo escuro para destacar o conteúdo
+        color: #fff; // Texto branco
+
+        .container-title, .subtitle, .text-content p, .social-icons a {
+            color: #fff; // Texto branco
+        }
+
+        .profile-photo {
+            border-color: #fff; // Borda branca para a foto de perfil
+        }
+    }
+}

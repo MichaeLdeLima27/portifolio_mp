@@ -38,16 +38,25 @@
             font-weight: 700;
             opacity: 0;
             animation: fadeInUp 1s ease-in-out forwards 0.5s;
+
+            @media (max-width: 768px) {
+                font-size: 36px;
+            }
         }
     
         p {
             font-size: 30px;
             color: #fff;
-            margin-top: 120px;
+            margin-top: 20px;
             line-height: 1.6;
             max-width: 500px;
             opacity: 0;
             animation: fadeInUp 1s ease-in-out forwards 0.8s;
+
+            @media (max-width: 768px) {
+                font-size: 20px;
+                margin-top: 10px;
+            }
 
             .highlight {
                 color: #000; // Cor diferente para o span
@@ -56,10 +65,9 @@
         }
     }
 
-
     .scroll-down {
         position: absolute;
-        bottom: 150px;
+        bottom: 50px;
         left: 50%;
         width: 50px;
         height: 50px;
@@ -80,6 +88,13 @@
             transform: translateX(-50%) scale(1.2);
             background-color: $accent-color;
             color: $title-primary;
+        }
+
+        @media (max-width: 768px) {
+            bottom: 30px;
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
         }
     }
     

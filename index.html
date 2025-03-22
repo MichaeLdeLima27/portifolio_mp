@@ -17,8 +17,11 @@
                     <button class="lang-btn"><img id="btn-en" src="./src/images/estados-unidos.png" alt="Inglês"></button>
                     <button class="theme-btn"><img src="./src/images/dia-e-noite.png" alt="Tema"></button>
                 </div>
-                <div class="logo"><a href="index.html">Desenvolvedor<span>Fullstack</span></a></div>
-                <ul class="menu">
+                <div class="logo"><a href="index.html" data-translate="logo.fullName">Desenvolvedor<span>Fullstack</span></a></div>
+                <div class="menu" onclick="toggleMenu()">
+                    &#9776; <!-- Ícone de menu hambúrguer -->
+                </div>
+                <ul class="nav-links">
                     <li id="nav-inicio" class="nav-item"><a href="#inicio" class="nav-link active" data-translate="nav.inicio">Inicio</a></li>
                     <li id="nav-sobre" class="nav-item"><a href="#sobre" class="nav-link" data-translate="nav.sobre">Sobre</a></li>
                     <li id="nav-habilidades" class="nav-item"><a href="#habilidades" class="nav-link" data-translate="nav.habilidades">Habilidades</a></li>
@@ -97,45 +100,32 @@
             <div class="portfolio-cards">
                 <div class="card">
                     <div class="card-content">
+                        <h3 class="card-title">Ecommerce Efood mp</h3>
+                        <img src="./dist/images/Efood_mp.png" alt="Ecommerce Restaurantes" class="card-image">
+                    </div>
+                    <div class="card-icons">
+                        <a href="https://project-efood-mp.vercel.app/" target="_blank"><i class="fas fa-globe"></i></a>
+                        <a href="https://github.com/MichaeLdeLima27/project_efood_mp" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
                         <h3 class="card-title">Clone Disney Plus</h3>
-                        <img src="./dist/images/clone_site_disney.png" alt="Projeto Front-end 1" class="card-image">
-                        <video src="path/to/your/video1.mp4" class="card-video"></video>
+                        <img src="./dist/images/clone_disney.png" alt="Clone site Disney+" class="card-image">
                     </div>
                     <div class="card-icons">
                         <a href="https://clone-disneyplus-sigma-lemon.vercel.app/" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/MichaeLdeLima27/clone_disneyplus" target="_blank"><i class="fab fa-github"></i></a>
-                        <div class="like-button">
-                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
-                            <span class="like-count">0</span>
-                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
-                        <img src="path/to/your/image2.jpg" alt="Projeto Front-end 2" class="card-image">
+                        <h3 class="card-title">Ecommerce Eplay mp</h3>
+                        <img src="./dist/images/Eplay_mp.png" alt="Ecommerce de Jogos" class="card-image">
                     </div>
                     <div class="card-icons">
-                        <a href="https://link-to-project2.com" target="_blank"><i class="fas fa-globe"></i></a>
-                        <a href="https://github.com/your-repo2" target="_blank"><i class="fab fa-github"></i></a>
-                        <div class="like-button">
-                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
-                            <span class="like-count">0</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h3 class="card-title">Clone Disney Plus</h3>
-                        <img src="path/to/your/image3.jpg" alt="Projeto Front-end 3" class="card-image">
-                    </div>
-                    <div class="card-icons">
-                        <a href="https://link-to-project3.com" target="_blank"><i class="fas fa-globe"></i></a>
-                        <a href="https://github.com/your-repo3" target="_blank"><i class="fab fa-github"></i></a>
-                        <div class="like-button">
-                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
-                            <span class="like-count">0</span>
-                        </div>
+                        <a href="https://eplay-mp.vercel.app/" target="_blank"><i class="fas fa-globe"></i></a>
+                        <a href="https://github.com/MichaeLdeLima27/eplay_mp" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -164,10 +154,6 @@
                     <div class="card-icons">
                         <a href="https://link-to-project2.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo2" target="_blank"><i class="fab fa-github"></i></a>
-                        <div class="like-button">
-                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
-                            <span class="like-count">0</span>
-                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -179,10 +165,6 @@
                     <div class="card-icons">
                         <a href="https://link-to-project3.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo3" target="_blank"><i class="fab fa-github"></i></a>
-                        <div class="like-button">
-                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
-                            <span class="like-count">0</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -211,10 +193,6 @@
                     <div class="card-icons">
                         <a href="https://link-to-project2.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo2" target="_blank"><i class="fab fa-github"></i></a>
-                        <div class="like-button">
-                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
-                            <span class="like-count">0</span>
-                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -226,10 +204,6 @@
                     <div class="card-icons">
                         <a href="https://link-to-project3.com" target="_blank"><i class="fas fa-globe"></i></a>
                         <a href="https://github.com/your-repo3" target="_blank"><i class="fab fa-github"></i></a>
-                        <div class="like-button">
-                            <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
-                            <span class="like-count">0</span>
-                        </div>
                     </div>
                 </div>
             </div>

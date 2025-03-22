@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", async function () {
     AOS.init();
-});
 
 const hero = document.querySelector(".hero");
 const left = document.querySelector(".split.left");
@@ -63,6 +62,7 @@ const translations = {
         "contato.title": "Contact",
         "portifolio.mobile": "Mobile",
         "portifolio.title": "Portfolio",
+        "logo.fullName": "FullstackDeveloper",
         // Other translations in English...
     },
     it: {
@@ -92,6 +92,7 @@ const translations = {
         "contato.title": "Contatto",
         "portifolio.mobile": "Mobile",
         "portifolio.title": "Portfolio",
+        "logo.fullName": "Sviluppatore Fullstack",
         // Other translations in Italian...
     }
 };
@@ -145,4 +146,29 @@ hero.addEventListener("mousemove", (e) => {
     left.style.width = `${percentage}%`;
     right.style.width = `${100 - percentage}%`;
     overlay.style.left = `${percentage}%`;
+});
+
+   // 🌗 Alternar entre temas claro e escuro
+const themeButton = document.querySelector(".theme-btn");
+const currentTheme = localStorage.getItem("theme") || "light";
+document.body.classList.add(currentTheme);
+
+themeButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+    const newTheme = document.body.classList.contains("dark") ? "dark" : "light";
+    localStorage.setItem("theme", newTheme);
+});
+});
+
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.remove('active');
+    });
 });
