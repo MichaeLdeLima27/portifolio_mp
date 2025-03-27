@@ -11,6 +11,8 @@
     flex-direction: column;
     position: relative;
     box-sizing: border-box;
+    margin-top: 50px;
+    z-index: 0;
 
     @media (max-width: 768px) {
         padding: 30px 10px;
@@ -43,7 +45,7 @@
     margin-bottom: 82px;
     font-family: 'Kaushan Script', cursive;
     z-index: 2;
-    margin-left: 400px;
+    margin-left: 450px;
 
     @media (max-width: 768px) {
         font-size: 24px;
@@ -169,10 +171,12 @@
     }
 
     .contact-address {
-        h3 {
+        a {
             font-size: 20px;
             color: #4c6893; /* Cor do título */
             margin-bottom: 8px;
+            text-decoration: none;
+            font-weight: bold;
 
             @media (max-width: 768px) {
                 font-size: 18px;

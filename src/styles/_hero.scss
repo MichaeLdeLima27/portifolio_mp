@@ -8,7 +8,6 @@
     padding: 0 10%;
     color: $color-primary;
     font-family: $font-primary;
-    background: url("../images/hero1.mp4") no-repeat center center/cover;
     overflow: hidden;
     position: relative;
     object-fit: contain;
@@ -83,6 +82,7 @@
         padding: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease-in-out, background-color 0.3s;
+        margin-bottom: 100px;
     
         &:hover {
             transform: translateX(-50%) scale(1.2);

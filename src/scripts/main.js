@@ -33,6 +33,7 @@ const translations = {
         "contato.subtitle": "Fique à vontade para entrar em contato",
         "contato.title": "Contato",
         "portifolio.mobile": "Mobile",
+        "portifolio.frontend": "Confira alguns projetos que realizei!",
         // Outras traduções em português...
     },
     en: {
@@ -52,8 +53,8 @@ const translations = {
         "portifolio.backend": "Back-end",
         "portifolio.mobile": "Mobile",
         "footer.copyright": "&copy; 2023 Michael de Lima Rocha | Fullstack Developer",
-        "contato.address-text": "Via Esempio, 123, Citta, Stato",
-        "contato.address": "My Address",
+        "contato.address-text": "Did you like my service? Feel free to get in touch.",
+        "contato.address": "Get in touch via wathsaap",
         "contato.submit": "Send",
         "contato.message": "Message",
         "contato.email": "Email",
@@ -63,6 +64,7 @@ const translations = {
         "portifolio.mobile": "Mobile",
         "portifolio.title": "Portfolio",
         "logo.fullName": "FullstackDeveloper",
+        "portifolio.frontend": "Check out some projects I have done!",
         // Other translations in English...
     },
     it: {
@@ -82,8 +84,8 @@ const translations = {
         "portifolio.backend": "Back-end",
         "portifolio.mobile": "Mobile",
         "footer.copyright": "&copy; 2025 Michael de Lima Rocha | Sviluppatore Fullstack",
-        "contato.address-text": "Via Esempio, 123, Citta, Stato",
-        "contato.address": "Indirizzo",
+        "contato.address-text": "Ti è piaciuto il mio servizio? Sentiti libero di contattarmi.",
+        "contato.address": "Entrare in contatto per wathsaap",
         "contato.submit": "Invia",
         "contato.message": "Messaggio",
         "contato.email": "Email",
@@ -93,6 +95,7 @@ const translations = {
         "portifolio.mobile": "Mobile",
         "portifolio.title": "Portfolio",
         "logo.fullName": "Sviluppatore Fullstack",
+        "portifolio.frontend": "Dai un'occhiata ad alcuni progetti che ho realizzato!",
         // Other translations in Italian...
     }
 };
@@ -170,5 +173,37 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         const navLinks = document.querySelector('.nav-links');
         navLinks.classList.remove('active');
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault(); // Impede o comportamento padrão de redirecionamento
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Accept: "application/json",
+                },
+            });
+
+            if (response.ok) {
+                alert("Mensagem enviada com sucesso! Obrigado por entrar em contato.\n" +
+                    "Message sent successfully! Thank you for getting in touch.\n" +
+                    "Messaggio inviato con successo! Grazie per averci contattato.");
+                form.reset(); // Limpa o formulário após o envio
+            } else {
+                alert("Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.");
+            }
+        } catch (error) {
+            alert("Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.");
+        }
     });
 });
